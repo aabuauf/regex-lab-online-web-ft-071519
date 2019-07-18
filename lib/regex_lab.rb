@@ -16,7 +16,7 @@ text.greb(/\s\w{5}\s/)
 end
 
 def first_word_capitalized_and_ends_with_punctuation?(text)
-text.scan(/\W[A-Z]\w*[',.]/)
+text.match?(/\W[A-Z]\w*[',.]/)
 end
 
 def valid_phone_number?(phone)
